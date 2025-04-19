@@ -1,0 +1,101 @@
+{
+    "armmex": {
+        "name": "Metal Extractor",
+        "metal_cost": 50.0,
+        "energy_cost": 500.0,
+        "build_time": 18.0,
+        "metal_rate": 0.0,
+        "energy_rate": 0.0,
+        "energy_upkeep": -3.0,
+        "build_power": 0.0,
+        "prerequisites": []
+    },
+    "armsolar": {
+        "name": "Solar Collector",
+        "metal_cost": 155.0,
+        "energy_cost": 0.0,
+        "build_time": 26.0,
+        "metal_rate": 0.0,
+        "energy_rate": 20.0,
+        "energy_upkeep": 0.0,
+        "build_power": 0.0,
+        "prerequisites": []
+    },
+    "armmoho": {
+        "name": "Advanced Metal Extractor",
+        "metal_cost": 640.0,
+        "energy_cost": 8100.0,
+        "build_time": 141.0,
+        "metal_rate": 0.0,
+        "energy_rate": 0.0,
+        "energy_upkeep": 0.0,
+        "build_power": 0.0,
+        "prerequisites": ["armmex"]
+    },
+    "armmex2": {
+        "name": "Advanced Metal Extractor MK2",
+        "metal_cost": 2000.0,
+        "energy_cost": 12000.0,
+        "build_time": 200.0,
+        "metal_rate": 4.0,
+        "energy_rate": 0.0,
+        "energy_upkeep": -3.0,
+        "build_power": 0.0,
+        "prerequisites": ["armmoho"]
+    },
+    "armgant": {
+        "name": "Experimental Gantry",
+        "metal_cost": 8400.0,
+        "energy_cost": 62000.0,
+        "build_time": 673.0,
+        "metal_rate": 0.0,
+        "energy_rate": 0.0,
+        "energy_upkeep": 0.0,
+        "build_power": 0.0,
+        "prerequisites": []
+    },
+    "armfus": {
+        "name": "Fusion Reactor",
+        "metal_cost": 4500.0,
+        "energy_cost": 26000.0,
+        "build_time": 754.0,
+        "metal_rate": 0.0,
+        "energy_rate": 1100.0,
+        "energy_upkeep": 0.0,
+        "build_power": 0.0,
+        "prerequisites": ["armgant"]
+    },
+    "armbotfac": {
+        "name": "Bot Factory",
+        "metal_cost": 3000.0,
+        "energy_cost": 1500.0,
+        "build_time": 120.0,
+        "metal_rate": 0.0,
+        "energy_rate": 0.0,
+        "energy_upkeep": 0.0,
+        "build_power": 0.0,
+        "prerequisites": ["armgant"]
+    },
+    "armcon": {
+        "name": "Construction Bot",
+        "metal_cost": 20.0,
+        "energy_cost": 0.0,
+        "build_time": 12.0,
+        "metal_rate": 0.0,
+        "energy_rate": 0.0,
+        "energy_upkeep": 0.0,
+        "build_power": 10.0,
+        "prerequisites": ["armbotfac"]
+    },
+    "armadvbot": {
+        "name": "Advanced Construction Bot",
+        "metal_cost": 500.0,
+        "energy_cost": 150.0,
+        "build_time": 20.0,
+        "metal_rate": 0.0,
+        "energy_rate": 0.0,
+        "energy_upkeep": 0.0,
+        "build_power": 40.0,
+        "prerequisites": ["armcon"]
+    }
+}
